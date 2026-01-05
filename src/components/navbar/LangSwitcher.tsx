@@ -1,6 +1,5 @@
 import { useTranslation } from "react-i18next";
 import { HiLanguage } from "react-icons/hi2";
-import { motion } from "framer-motion";
 const LangSwitcher = () => {
     const { i18n } = useTranslation();
 
