@@ -2,9 +2,7 @@ import { useTranslation } from "react-i18next";
 import { HiLanguage } from "react-icons/hi2";
 const LangSwitcher = () => {
     const { i18n } = useTranslation();
-
     const isArabic = i18n.language === "ar";
-
     const toggleLanguage = () => {
         i18n.changeLanguage(isArabic ? "en" : "ar");
     };
