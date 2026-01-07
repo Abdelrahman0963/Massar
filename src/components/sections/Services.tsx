@@ -2,7 +2,7 @@ import { useTranslation } from "react-i18next";
 import { lazy } from "react";
 import { motion } from "framer-motion";
 
-const ServicesCards = lazy(() => import("../ServicesCards"));
+const ServicesCards = lazy(() => import("../cards/ServicesCards"));
 const Services = () => {
     const { t } = useTranslation();
     return (

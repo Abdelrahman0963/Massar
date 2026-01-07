@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
+import WorkCards from "../cards/WorkCards";
 
 const Work = () => {
     const { t } = useTranslation();
@@ -42,6 +43,7 @@ const Work = () => {
                     <h1 className="text-3xl md:text-5xl font-bold text-white mt-6 md:mt-12">{t("How We Work")}</h1>
                     <p className="text-center md:text-[1.2rem] text-[0.8rem] text-white/60 mt-4!">{t("A simple and clear process to transform your idea into digital reality")}</p>
                 </motion.div>
+                <WorkCards />
             </div>
         </section>
     )

@@ -53,7 +53,7 @@ const ServicesCards = () => {
                         ease: "easeOut",
                     }}
                     key={index}
-                    className="bg-[#1a1a21]/80 hover:-translate-y-2 transition-all cursor-pointer flex flex-col gap-6 items-start justify-center rounded-2xl px-8! py-10!"
+                    className="bg-[#1a1a21]/80 hover:bg-[#1a1a21] ackdrop-blur-lg border border-white/10 hover:-translate-y-2 transition-all cursor-pointer flex flex-col gap-6 items-start justify-center rounded-2xl px-8! py-10!"
                 >
                     <nav className="bg-linear-to-br from-[#0a0a0a] to-[#1f42a3] p-3! rounded-lg hover:shadow-lg hover:rotate-12 shadow-[#3eaffa]/30 transition-all">
                         {card.icon}
