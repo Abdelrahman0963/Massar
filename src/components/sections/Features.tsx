@@ -1,8 +1,9 @@
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
-import FeaturesCards from "../cards/FeaturesCards";
-import Partners from "@/components/bannar/Partners";
+import { lazy } from "react";
 
+const Partners = lazy(() => import("@/components/bannar/Partners"));
+const FeaturesCards = lazy(() => import("@/components/cards/FeaturesCards"));
 const Features = () => {
     const { t } = useTranslation();
     return (
@@ -46,7 +47,6 @@ const Features = () => {
                 </motion.div>
                 <FeaturesCards />
                 <Partners />
-
             </div>
         </section>
     )

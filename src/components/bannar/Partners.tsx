@@ -11,7 +11,7 @@ const Partners = () => {
     ];
 
     return (
-        <div className="w-full mt-12! md:px-0! px-8!">
+        <div className="w-full mt-12! ">
             <motion.div
                 initial={{
                     scale: 0.7,

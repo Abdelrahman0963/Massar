@@ -2,7 +2,7 @@
         "Our Services": "خدماتنا",
         "How We Work": " طريقه العمل",
         "Why Us": "لماذا نحن",
-        "Our Work": "اعمالنا",
+        "Our Solutions": "حلولنا",
         "Contact Us": "تواصل معنا",
         "We design and develop complete digital solutions": "نصمم ونطور حلول رقمية متكاملة",
         "We transform your ideas into": "نحول أفكارك إلى",
@@ -53,6 +53,16 @@
         "Years of Experience": "سنوات من الخبرة",
         "Projects Completed": "المشاريع المكتملة",
         "Happy Clients": "عملاء سعداء",
+        "Solutions We Build": "الحلول التي نبنيها",
+        "A look at the digital solutions we design and build": "نظرة على الحلول الرقمية التي نصممها ونبنيها",
+        "Custom Websites": "مواقع مخصصة",
+        "We design and build fast, modern, and responsive websites that represent your brand and turn visitors into customers": "نصمم ونبني مواقع سريعة وعصرية ومتجاوبة تمثل علامتك التجارية وتحول الزوار إلى عملاء",
+        "E-commerce Solutions": "حلول التجارة الإلكترونية",
+        "We build secure and scalable e-commerce stores with smooth payment processes, product management, and payment integration": "نبني متاجر إلكترونية آمنة وقابلة للتوسع مع عمليات دفع سلسة، وإدارة المنتجات، وتكامل الدفع",
+        "Business Systems": "أنظمة الأعمال",
+        "We develop dashboards, resource planning systems, and custom management systems to help businesses track, control, and grow their operations efficiently": "نطور لوحات تحكم، وأنظمة تخطيط الموارد، وأنظمة إدارية مخصصة لمساعدة الأعمال على تتبع، والتحكم، وتنمية عملياتها بكفاءة",
+        "Customizing Ready-made Solutions": "تخصيص الحلول الجاهزة",
+        "We customize and develop existing systems, templates, and scripts to fit your business needs and workflow": "نقوم بتخصيص وتطوير الأنظمة والقوالب والنصوص البرمجية الموجودة لتناسب احتياجات عملك وسير العمل الخاص بك",
         "Massar Technology. All rights reserved.": "جميع الحقوق محفوظة لشركة مسار للتقنية."
 
 }
