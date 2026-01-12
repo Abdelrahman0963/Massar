@@ -2,7 +2,7 @@ import React from 'react'
 import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
 const Form = React.lazy(() => import('@/components/contact/Form'));
-const Content = React.lazy(() => import('@/components/contact/content'));
+const Content = React.lazy(() => import('@/components/contact/Content'));
 const Contact = () => {
     const { t } = useTranslation();
     return (
