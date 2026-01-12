@@ -42,25 +42,49 @@ const Content = () => {
                     {t("Contact Methods")}
                 </h2>
                 <div className="flex flex-col items-start justify-start gap-3">
-                    <div className="flex items-start gap-3 cursor-pointer hover:opacity-80 transition-opacity hover:translate-x-1.5">
-                        <nav className="flex items-center justify-center  p-3! bg-[#2d273b]/60 rounded-xl">
+                    <div className="flex items-start gap-3 cursor-pointer transition-all hover:opacity-80 hover:translate-x-1.5">
+                        {/* ICON */}
+                        <nav className="flex items-center justify-center p-3! bg-[#2d273b]/60 rounded-xl shrink-0">
                             <CiMail size={30} className="text-[#3eaffa]" />
                         </nav>
-                        <nav className='flex flex-col gap-2'>
-                            <span className='text-white/60'>{t("Email")}</span>
-                            <span onClick={copyEmail} className="cursor-pointer">massar.tech0001@gmail.com</span>
+
+                        {/* TEXT */}
+                        <nav className="flex flex-col gap-2 min-w-0">
+                            <span className="text-white/60 text-sm">
+                                {t("Email")}
+                            </span>
+
+                            <span
+                                onClick={copyEmail}
+                                className="cursor-pointer text-sm break-all leading-relaxed"
+                            >
+                                massar.tech0001@gmail.com
+                            </span>
                         </nav>
                     </div>
 
-                    <div className="flex items-start gap-3 cursor-pointer hover:opacity-80 transition-opacity hover:translate-x-1.5">
-                        <nav className="flex items-center justify-center  p-3! bg-[#2d273b]/60 rounded-xl">
+
+                    <div className="flex items-start gap-3 cursor-pointer transition-all hover:opacity-80 hover:translate-x-1.5 mt-4">
+                        {/* ICON */}
+                        <nav className="flex items-center justify-center p-3! bg-[#2d273b]/60 rounded-xl shrink-0">
                             <FaWhatsapp size={30} className="text-[#3eaffa]" />
                         </nav>
-                        <nav className='flex flex-col gap-2'>
-                            <span className='text-white/60'>{t("WhatsApp")}</span>
-                            <span onClick={copyWhatsapp} className=" cursor-pointer">+0201144706479</span>
+
+                        {/* TEXT */}
+                        <nav className="flex flex-col gap-2 min-w-0">
+                            <span className="text-white/60 text-sm">
+                                {t("WhatsApp")}
+                            </span>
+
+                            <span
+                                onClick={copyWhatsapp}
+                                className="cursor-pointer text-sm break-all"
+                            >
+                                +0201144706479
+                            </span>
                         </nav>
                     </div>
+
 
                 </div>
             </motion.div>
@@ -87,7 +111,7 @@ const Content = () => {
                         <span className="text-white/80">{t("9:00 AM - 6:00 PM")}</span>
                     </nav>
                     <nav className="flex items-start justify-between">
-                        <span className="text-white/60">{t("Friday - Saturday")}</span>
+                        <span className="text-white/60">{t("Friday")}</span>
                         <span className="text-white/80">{t("Closed")}</span>
                     </nav>
                 </div>
