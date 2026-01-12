@@ -6,12 +6,20 @@ import { motion } from "framer-motion";
 
 const Content = () => {
     const { t } = useTranslation();
-    const copyToClipboard = () => {
-        navigator.clipboard.writeText("R9d9u@example.com");
+    const copyEmail = () => {
+        navigator.clipboard.writeText("massar.tech0001@gmail.com");
         try {
             toast.success("Email copied to clipboard!");
         } catch (error) {
             alert("Failed to copy email. Please try manually.");
+        }
+    };
+    const copyWhatsapp = () => {
+        navigator.clipboard.writeText("+0201144706479");
+        try {
+            toast.success("Phone number copied to clipboard!");
+        } catch (error) {
+            alert("Failed to copy phone number. Please try manually.");
         }
     };
     return (
@@ -40,7 +48,7 @@ const Content = () => {
                         </nav>
                         <nav className='flex flex-col gap-2'>
                             <span className='text-white/60'>{t("Email")}</span>
-                            <span onClick={copyToClipboard} className="cursor-pointer">R9d9u@example.com</span>
+                            <span onClick={copyEmail} className="cursor-pointer">massar.tech0001@gmail.com</span>
                         </nav>
                     </div>
 
@@ -50,7 +58,7 @@ const Content = () => {
                         </nav>
                         <nav className='flex flex-col gap-2'>
                             <span className='text-white/60'>{t("WhatsApp")}</span>
-                            <span onClick={copyToClipboard} className=" cursor-pointer">+0201144706479</span>
+                            <span onClick={copyWhatsapp} className=" cursor-pointer">+0201144706479</span>
                         </nav>
                     </div>
 
