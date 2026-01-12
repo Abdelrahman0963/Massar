@@ -40,7 +40,7 @@ const WorkCards = () => {
 
     return (
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-8!">
-            {cards.map((card : any, index) => (
+            {cards.map((card: any, index) => (
                 <motion.div
                     initial={{ y: 30, opacity: 0 }}
                     whileInView={{ y: 0, opacity: 1 }}
@@ -58,7 +58,7 @@ const WorkCards = () => {
                             {card.icon}
                         </nav>
 
-                        <span className="text-3xl font-bold bg-gradient-to-br from-[#3c3c3c] to-[#1f42a3] bg-clip-text text-transparent">
+                        <span className="text-3xl font-bold bg-linear-to-br from-[#3c3c3c] to-[#1f42a3] bg-clip-text text-transparent">
                             {card.number}
                         </span>
                     </div>

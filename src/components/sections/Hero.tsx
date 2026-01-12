@@ -18,17 +18,26 @@ const Hero = () => {
                     initial={{ y: 20, opacity: 0 }}
                     animate={{ y: 0, opacity: 1 }}
                     transition={{ duration: 0.5, delay: 0.6, ease: "easeOut" }}
-                    className="flex flex-col items-center text-center gap-2.5">
-                    <h1 className="relative z-10 text-4xl md:text-7xl font-bold text-white mt-6 md:mt-12">{t("We transform your ideas into")}</h1>
+                    className="relative flex flex-col items-center text-center gap-2.5"
+                >
+                    <div className="absolute -top-10 md:w-2xl md:h-56 bg-[#3eaffa]/40 blur-[120px] rounded-full"></div>
+
+                    <h1 className="relative z-10 text-4xl md:text-7xl font-bold text-white mt-6 md:mt-12">
+                        {t("We transform your ideas into")}
+                    </h1>
+
                     <GradientText
-                        colors={["#1f42a3", "#3eaffa", "#1f42a3", "#3eaffa", "#1f42a3"]}
+                        colors={["#1f42a3", "#3eaffa", "#1f42a3"]}
                         animationSpeed={3}
                         showBorder={false}
-                        className="text-4xl md:text-7xl font-bold text-center "
+                        className="relative text-4xl md:text-7xl font-bold text-center"
                     >
                         {t("successful digital platforms")}
                     </GradientText>
-                    <p className="text-center md:text-[1.2rem] text-[0.8rem] text-white/60 mt-4!">{t("We help business owners grow by designing professional websites and developing custom digital systems that streamline operations efficiently.")}</p>
+
+                    <p className="relative z-10 text-center md:text-[1.2rem] text-[0.8rem] text-white/60 mt-4!">
+                        {t("We help business owners grow by designing professional websites and developing custom digital systems that streamline operations efficiently.")}
+                    </p>
                 </motion.div>
                 <motion.div
                     initial={{ y: 20, opacity: 0 }}
@@ -40,7 +49,7 @@ const Hero = () => {
                         <a className="text-black text-[1rem]" href="contact">{t("start your project")}</a>
                     </nav>
                     <nav
-                        className="mt-4 md:mt-0 md:ml-4 border-[1px] border-gray-50 bg-white/10 rounded-lg px-4! py-3! scale-100 hover:scale-110 delay-0 transition-all cursor-pointer">
+                        className="mt-4 md:mt-0 md:ml-4 border border-gray-50 bg-white/10 rounded-lg px-4! py-3! scale-100 hover:scale-110 delay-0 transition-all cursor-pointer">
                         <a className="text-white text-[1rem]" href="#portfolio">{t("view our work")}</a>
                     </nav>
                 </motion.div>

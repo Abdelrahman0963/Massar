@@ -1,6 +1,8 @@
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import FeaturesCards from "../cards/FeaturesCards";
+import Partners from "@/components/bannar/Partners";
+
 const Features = () => {
     const { t } = useTranslation();
     return (
@@ -43,6 +45,8 @@ const Features = () => {
                     <p className="text-center md:text-[1.2rem] text-[0.8rem] text-white/60 mt-4!">{t("We combine experience and professionalism to provide you with a distinctive experience")}</p>
                 </motion.div>
                 <FeaturesCards />
+                <Partners />
+
             </div>
         </section>
     )
