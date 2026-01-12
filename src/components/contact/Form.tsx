@@ -1,6 +1,8 @@
 import React from "react";
 import { useForm, SubmitHandler } from "react-hook-form";
 import { useTranslation } from "react-i18next";
+import { motion } from "framer-motion";
+import { toast } from 'react-hot-toast';
 
 type FormData = {
     name: string;
@@ -31,10 +33,10 @@ const Form = () => {
             });
 
             if (res.ok) {
-                alert("Message sent successfully!");
+                toast.success("Message sent successfully!");
                 reset();
             } else {
-                alert("Something went wrong. Please try again.");
+                toast.error("Something went wrong. Please try again.");
             }
         } catch (err) {
             alert("Network error. Please try again.");
@@ -42,9 +44,22 @@ const Form = () => {
     };
 
     return (
-        <div className="bg-[#171717] w-full p-4! rounded-lg border border-white/10">
+        <motion.div
+            initial={{
+                y: 20, opacity: 0
+            }}
+            whileInView={{
+                y: 0, opacity: 1
+            }}
+            viewport={{ once: true, amount: 0.4 }}
+            transition={{
+                duration: 0.6,
+                delay: 0.6,
+                ease: "easeOut",
+            }}
+            className="bg-[#171717] md:w-1/2 w-full p-4! rounded-xl border border-white/10">
             <form
-                className="md:w-lg w-96 flex flex-col gap-4"
+                className="w-full flex flex-col gap-4"
                 onSubmit={handleSubmit(onSubmit)}
             >
                 <label>{t("Name")}</label>
@@ -89,7 +104,7 @@ const Form = () => {
                     {isSubmitting ? "Sending..." : t("Send Message")}
                 </button>
             </form>
-        </div>
+        </motion.div>
     );
 };
 

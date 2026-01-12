@@ -2,6 +2,7 @@ import React from 'react'
 import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
 const Form = React.lazy(() => import('@/components/contact/Form'));
+const Content = React.lazy(() => import('@/components/contact/content'));
 const Contact = () => {
     const { t } = useTranslation();
     return (
@@ -14,7 +15,7 @@ const Contact = () => {
                     className="text-center space-y-6 px-4! bg-[#1a1a21]/80 backdrop-blur-lg border border-white/10 rounded-full py-3!" >
                     <p className="text-white/60 text-sm md:text-[1rem]">{t("Contact Us")}</p>
                 </motion.nav>
-                 <motion.div
+                <motion.div
                     initial={{
                         y: 20, opacity: 0
                     }}
@@ -31,8 +32,9 @@ const Contact = () => {
                     <h1 className="text-3xl md:text-5xl font-bold text-white mt-6 md:mt-12">{t("Let's Start Your Project")}</h1>
                     <p className="text-center md:text-[1.2rem] text-[0.8rem] text-white/60 mt-4!">{t("Ready to listen to your idea and turn it into digital reality")}</p>
                 </motion.div>
-                <div className="flex items-center justify-center gap-6">
+                <div className="w-full flex md:flex-row flex-col items-center justify-between">
                     <Form />
+                    <Content />
                 </div>
             </div>
         </section>

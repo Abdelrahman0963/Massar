@@ -1,5 +1,6 @@
 import Hero from "@/components/sections/Hero"
 import { lazy } from "react";
+import { Toaster } from "react-hot-toast";
 const Services = lazy(() => import("@/components/sections/Services"));
 const Work = lazy(() => import("@/components/sections/Work"));
 const Features = lazy(() => import("@/components/sections/Features"));
@@ -14,6 +15,10 @@ const Home = () => {
             <Features />
             <Portfolio />
             <Contact />
+            <Toaster
+                position="bottom-center"
+                reverseOrder={false}
+            />
         </div>
     )
 }
