@@ -14,14 +14,6 @@ const Content = () => {
             alert("Failed to copy email. Please try manually.");
         }
     };
-    const copyWhatsapp = () => {
-        navigator.clipboard.writeText("+0201144706479");
-        try {
-            toast.success("Phone number copied to clipboard!");
-        } catch (error) {
-            alert("Failed to copy phone number. Please try manually.");
-        }
-    };
     return (
         <div className='md:w-1/2 w-full flex flex-col items-center justify-center gap-4  p-4!'>
             <motion.div
@@ -76,12 +68,13 @@ const Content = () => {
                                 {t("WhatsApp")}
                             </span>
 
-                            <span
-                                onClick={copyWhatsapp}
-                                className="cursor-pointer text-sm break-all"
-                            >
-                                +0201144706479
-                            </span>
+                            <a href="https://wa.me/+01144706479" target="_blank" rel="noopener noreferrer">
+                                <span
+                                    className="cursor-pointer text-sm break-all"
+                                >
+                                    +0201144706479
+                                </span>
+                            </a>
                         </nav>
                     </div>
 
