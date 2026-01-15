@@ -68,7 +68,7 @@ const Content = () => {
                                 {t("WhatsApp")}
                             </span>
 
-                            <a href="https://wa.me/+0201144706479" target="_blank" rel="noopener noreferrer">
+                            <a href="https://wa.me/01144706479" target="_blank" rel="noopener noreferrer">
                                 <span
                                     className="cursor-pointer text-sm break-all"
                                 >
