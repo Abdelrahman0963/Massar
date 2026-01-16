@@ -46,7 +46,7 @@ const Hero = () => {
                     className="flex flex-col sm:flex-row gap-4 mt-6!">
                     <nav
                         className="bg-white rounded-lg px-4! py-3! hover:scale-110 scale-100 transition-all delay-0 cursor-pointer">
-                        <a className="text-black text-[1rem]" href="contact">{t("start your project")}</a>
+                        <a className="text-black text-[1rem]" href="#contact">{t("start your project")}</a>
                     </nav>
                     <nav
                         className="mt-4 md:mt-0 md:ml-4 border border-gray-50 bg-white/10 rounded-lg px-4! py-3! scale-100 hover:scale-110 delay-0 transition-all cursor-pointer">
