@@ -34,5 +34,17 @@ export const projects: Project[] = [
         description: "Naseh is Legal Consultation App ",
         image: "/public/images/projects/n.webp",
         liveUrl: "https://apps.apple.com/il/app/naseh/id6751805697",
-    },
+    }, {
+        id: 5,
+        title: "EcoCart (UIUX Design)",
+        description: "EcoCart — Sustainable Shopping Experience",
+        image: "/public/images/projects/EcoCart.png",
+        liveUrl: "https://www.behance.net/gallery/238985187/EcoCart-Sustainable-Shopping-Experience",
+    }, {
+        id: 6,
+        title: "Swarny App (UIUX Design)",
+        description: " Swarny App (UI/UX Case Study)",
+        image: "/public/images/projects/Sawrny.png",
+        liveUrl: "https://www.behance.net/gallery/236492265/-Swarny-App-(UIUX-Case-Study)",
+    }
 ];

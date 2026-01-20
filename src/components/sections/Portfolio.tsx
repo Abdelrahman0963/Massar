@@ -34,7 +34,7 @@ const Portfolio: React.FC = () => {
                 </motion.div>
                 <PortfolioCards />
                 <nav
-                    className="bg-white rounded-lg px-4! py-3! hover:scale-110 scale-100 transition-all delay-0 cursor-pointer">
+                    className="bg-white rounded-lg px-4! py-3!  hover:scale-110 scale-100 transition-all delay-0 cursor-pointer">
                     <a className="text-black text-[1rem]" href="/portfolio">{t("see more")}</a>
                 </nav>            </div>
         </section>
