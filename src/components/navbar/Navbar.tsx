@@ -17,10 +17,10 @@ const Navbar: React.FC = () => {
                     <nav className="hidden lg:flex">
                         <ul className="flex items-center gap-4">
                             <li className="hover:scale-110 transition-all delay-75"><a className="px-4! py-[0.6rem]! text-[1rem] rounded-lg bg-white text-black hover:bg-white/90 hover:scale-105 transition-all" href="#contact">{t("Contact Us")}</a></li>
-                            <li className="hover:scale-110 transition-all delay-75"><a className="text-white/70 hover:text-white " href="#portfolio">{t("Our Solutions")}</a></li>
-                            <li className="hover:scale-110 transition-all delay-75"><a className="text-white/70 hover:text-white " href="#why-us">{t("Why Us")}</a></li>
-                            <li className="hover:scale-110 transition-all delay-75"><a className="text-white/70 hover:text-white " href="#work">{t("How We Work")}</a></li>
-                            <li className="hover:scale-110 transition-all delay-75"><a className="text-white/70 hover:text-white " href="#services">{t("Our Services")}</a></li>
+                            <li className="hover:scale-110 transition-all delay-75"><a className="text-white/70 hover:text-white " href="/#portfolio">{t("Our Solutions")}</a></li>
+                            <li className="hover:scale-110 transition-all delay-75"><a className="text-white/70 hover:text-white " href="/#why-us">{t("Why Us")}</a></li>
+                            <li className="hover:scale-110 transition-all delay-75"><a className="text-white/70 hover:text-white " href="/#work">{t("How We Work")}</a></li>
+                            <li className="hover:scale-110 transition-all delay-75"><a className="text-white/70 hover:text-white " href="/#services">{t("Our Services")}</a></li>
                         </ul>
                     </nav>
                 </div>
