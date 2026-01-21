@@ -33,10 +33,13 @@ const Portfolio: React.FC = () => {
                     <p className="text-center md:text-[1.2rem] text-[0.8rem] text-white/60 mt-4!">{t("A look at the digital solutions we design and build")}</p>
                 </motion.div>
                 <PortfolioCards />
-                <nav
-                    className="bg-white rounded-lg px-4! py-3!  hover:scale-110 scale-100 transition-all delay-0 cursor-pointer">
-                    <a className="text-black text-[1rem]" href="/portfolio">{t("see more")}</a>
-                </nav>            </div>
+                <a className="bg-white rounded-lg px-4! py-3!  hover:scale-110 scale-100 transition-all delay-0 cursor-pointer hover:bg-white/90 hover:text-black text-[1rem]" href="/portfolio">
+                    <nav
+                        className="text-black text-[1rem]">
+                        {t("see more")}
+                    </nav>
+                </a>
+            </div>
         </section>
     )
 }

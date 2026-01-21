@@ -12,6 +12,15 @@ type Project = {
 };
 const PortfolioPage = () => {
     const { t } = useTranslation();
+
+
+    const handleCardClick = (liveUrl?: string) => {
+        if (!liveUrl) return;
+
+        if (window.innerWidth < 768) {
+            window.open(liveUrl, "_blank");
+        }
+    };
     return (
         <section className='min-h-screen bg-[#0a0a0a] text-white md:px-24! px-4! py-30!'>
             <div className="w-full mx-auto px-6! md:px-12!">
@@ -39,6 +48,7 @@ const PortfolioPage = () => {
                 <div className="w-full max-w-7xl px-4 mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
                     {projects.map((project: Project, index: number) => (
                         <motion.article
+                            onClick={() => handleCardClick(project.liveUrl)}
                             key={project.id}
                             initial={{ opacity: 0, y: 30 }}
                             whileInView={{ opacity: 1, y: 0 }}
@@ -55,14 +65,14 @@ const PortfolioPage = () => {
                                 />
                                 <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition flex items-center justify-center gap-4">
                                     {project.liveUrl && (
-                                        <a
-                                            href={project.liveUrl}
+                                        <Link
+                                            to={project.liveUrl}
                                             target="_blank"
                                             rel="noreferrer"
                                             className="px-5! py-2! text-sm font-medium bg-white text-black rounded-full hover:bg-gray-200 transition"
                                         >
                                             Live Demo
-                                        </a>
+                                        </Link>
                                     )}
 
                                 </div>

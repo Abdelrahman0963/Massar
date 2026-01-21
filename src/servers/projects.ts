@@ -26,7 +26,7 @@ export const projects: Project[] = [
         title: "Incentify App",
         description: "Incentify is the ultimate workforce motivation platform designed for modern teams.",
         image: "/images/projects/i.webp",
-        liveUrl: "https://apps.apple.com/eg/app/incentify/id6483004442?l=ar",
+        liveUrl: "https://play.google.com/store/apps/details?id=com.gt.incentify",
     },
     {
         id: 4,
